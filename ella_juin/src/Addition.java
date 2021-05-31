@@ -17,6 +17,7 @@ public class Addition extends Application {
 	Pane pane=new Pane(); 
 	Scene scene=new Scene(pane, 400,400);
 
+
 	@Override
 	public void start(Stage primaryStage) {
 		Group group=new Group();
@@ -44,28 +45,12 @@ public class Addition extends Application {
 		lbl3.setLayoutY(500);
 		
 	lbl1.textProperty().bind(txt1.textProperty());
-	
+	lbl2.textProperty().bind(txt2.textProperty());
+	 
+	//tx1 + txt2 .textProperty().bind(lbl3.textProperty());
 		
 		
 		
-		
-			txt1.textProperty().addListener((observable,oldValue,newValue) -> {
-			System.out.println("nouvelle valeur " + newValue); });
-		
-		group.getChildren().add(b);
-		group.getChildren().add(txt);
-		
-		 primaryStage.setScene(scene);
-		 primaryStage.show();
-	
-	
-	
-	
-	
-	
 	}
-
-	public static void main(String[] args) {
-		launch(args);
-	}
-}
+		
+		
